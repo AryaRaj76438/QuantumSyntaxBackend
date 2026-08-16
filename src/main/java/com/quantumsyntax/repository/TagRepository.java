@@ -1,4 +1,11 @@
 package com.quantumsyntax.repository;
 
-public interface TagRepository {
+import com.quantumsyntax.entity.Tag;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface TagRepository extends JpaRepository<Tag, String> {
+    Optional<Tag> findByName(String name);
+    Optional<Tag> findBySlug(String slug);
 }
