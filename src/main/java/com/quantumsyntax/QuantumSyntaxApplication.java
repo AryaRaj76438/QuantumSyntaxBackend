@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class QuantumSyntaxApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(QuantumSyntaxApplication.class, args);
 
 	}
